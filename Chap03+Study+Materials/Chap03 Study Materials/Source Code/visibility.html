@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <title>Visibility in CSS</title>
+    <style>
+        .d1 {
+            width:300px;
+            height: 200px;
+            background-color: green;
+            float: left;
+            margin-left: 10px;
+        }
+        .d2 {
+            width:300px;
+            height: 200px;
+            background-color: yellow;
+            float: left;
+            margin-left: 10px;
+            visibility: visible;
+        }
+        .d3 {
+            width:300px;
+            height: 200px;
+            background-color: blue;
+            float: left;
+            margin-left: 10px;
+
+        }
+        #d {
+            visibility: hidden;
+        }
+        #d h1 {
+            visibility: inherit;
+        }
+    </style>
+</head>
+<body>
+    <div id="d">
+
+        <h1>Jafricode</h1>
+    </div>
+
+    <div>
+        <div class="d1"></div>
+        <div class="d2"></div>
+        <div class="d3"></div>
+    
+    </div>
+</body>
+</html>

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  
+    <title>Specificity in CSS</title>
+    <link rel="stylesheet" href="mycss.css">
+    <style>
+        /* * {
+            color:blue;
+        }
+        #h1 {
+            background-color: blue;
+        }
+        h1 {
+            background-color: black !important;
+            color: white;
+        }
+        .h1 {
+            background-color: green;
+        } */
+        h2 {
+            background-color: green;
+        }
+        h2 {
+            background-color: blue;
+        }
+        h2 {
+            background-color: pink;
+            color:blue;
+            border: 5px dashed black;
+        }
+    </style>
+</head>
+<body>
+    <h1 class="h1" id="h1" style="background-color: pink;">JafriCode</h1>  
+    <h2 style="background-color: blue;">JafriCode</h2>
+    <!-- 
+        1) Lowest to Highest
+        * (Universal selector have lowest priority )
+        Class 
+        ID
+        Inline style
+        !important
+        2) Equal properties 
+                1) background-color: yellow;
+                2) background-color: blue; // affected
+        3) Internal style have more specificity than External style
+        4) Inline > Internal > External 
+
+     -->
+</body>
+</html>
